@@ -6,6 +6,8 @@ CONFIG -= qt
 SOURCES += main.cpp
 
 HEADERS += \
-    bind.hpp
+    bind.hpp \
+    test.hpp
 
 QMAKE_CXXFLAGS += -std=c++1y
+LIBS += -lboost_unit_test_framework
